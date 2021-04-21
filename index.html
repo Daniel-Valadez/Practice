@@ -12,17 +12,53 @@
   </head>
 
   <body>
-    <header>
-      What Isuue Are You Facing?
-    </header>
+    <header>What Isuue Are You Facing?</header>
 
-    <p class = "site-text">Whether you have a drafty home, a noisy neighborhood, or a desire to reduce your
+    <p>Whether you have a drafty home, a noisy neighborhood, or a desire to reduce your
     energy consumption and costs, interior window inserts from Indow are a clear choice.</p>
 
     <!--This is where I'll need to create the container for the flexboxes-->
-    <div class = "container">
+    <main class = "container">
 
-    </div>
+      <!--Within these articles are going to the the columns of information we need-->
+      <article class = "article-box">
+
+        <!--A good way to think about HTML is imagining everything in boxes.
+      This gives me a smaller box to work with the content (images and text).-->
+        <div class = "content">
+          <header class = "subjects">Drafts & Savings</header>
+          <img src = "images/cold.jfif" alt = "Cold Weather"/>
+          <p class = "description">Seal out drafts, save money on energy bills and make your space
+          more comfortable. All while maintaining historic and architecural integrity
+        to preserve value.</p>
+        <button>Learn More</button>
+        </div>
+      </article>
+
+      <!--Now the rest of the HTML follows the same structure-->
+      <article class = "article-box">
+        <div>
+          <header class = "subjects">Noise Reduction</header>
+          <img src = "images/noise.jfif" alt = "Noise"/>
+          <p class = "description">If you're looking for soundproof windows, inserts are the answer.
+          They create as sound-deadening air pocket with your existing window
+        panes to block outside noise.</p>
+        <button>Learn More</button>
+        </div>
+      </article>
+
+      <article class = "article-box">
+        <div>
+          <header class = "subjects">Lights & UV</header>
+          <img src = "images/light.jfif" alt = "Sunlight"/>
+          <p class = "description">Whether you're trying to create privacy or filter damaging
+          UV rays to protect your cherished belongings, we've got a solution for you.</p>
+          <button>Learn More</button>
+        </div>
+      </article>
+
+    </main>
+
   </body>
 
 </html>
