@@ -1,3 +1,4 @@
+/*Handles the top of the site*/
 header {
   text-align: center;
   font-family: sans-serif;
@@ -6,25 +7,29 @@ header {
   color: #6DCCD8
 }
 
+/*This section handles most of the text for the site.*/
 p {
   text-align: center;
-  color: #A9AAAC;
+  color: #A9AAAC; /*gray color*/
   font-family: sans-serif;
   font-weight: bold;
   margin-left: 80px;
   margin-right: 80px;
 }
 
+/*Title of each colomn*/
 .subjects {
-  font-size: 16px;
+  font-size: 18px;
 }
 
+/*The overall container for the flexboxes*/
 .container {
   margin: 50px 10%;
   display: flex;
   flex-wrap: wrap;
 }
 
+/*Each Individual column or article in this sense.*/
 .article-box{
   flex: 0 1 28%;
   display: flex;
@@ -32,7 +37,12 @@ p {
   padding: 20px;
 }
 
+/*Conetent Within the article box.*/
 .content {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 img {
@@ -47,11 +57,25 @@ img {
 }
 
 .description {
-  margin: 10%; 
+  margin: 10%;
 }
 
+/*Styling for the button and alignment within the box.*/
 button {
   background-color: #97999C;
   border: none;
   color: #FFFFFF;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 135px;
+  height: 40px;
+}
+
+.learn:hover{
+  background-color: #6DCCD8;
+  cursor: pointer;
+}
+
+.content > button {
+  align-self: flex-end;
 }
